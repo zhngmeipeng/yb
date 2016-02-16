@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="js/easyui/jquery-1.8.0.min.js"></script>
+    <script src="js/test2.js"></script>
+</head>
+<body>
+<div class="halo"></div>
+</body>
+</html>
+        <script>
+           /* $('div').test2({},$('a'))*/
+        </script>
+        <style>
+
+            .halo {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+            }
+            .halo:before,
+            .halo:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 240px;
+                height: 240px;
+                left: -120px;
+                top: -120px;
+                border-radius: 240px;
+                animation-name: Grow;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                /* Safari and Chrome */
+
+                -webkit-animation-name: Grow;
+                -webkit-animation-duration: 10s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+            }
+            .halo:before {
+                box-shadow: 0px 0px 100px 10px #b5d334;
+            }
+            .halo:after {
+                box-shadow: inset 0px 0px 100px 10px #b5d334;
+            }
+            @-webkit-keyframes Grow {
+                0% {
+                    transform: scale(0.1);
+                    -ms-transform: scale(0.1);
+                    /* IE 9 */
+
+                    -webkit-transform: scale(0.1);
+                    /* Safari and Chrome */
+
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+                100% {
+                    transform: scale(2);
+                    -ms-transform: scale(2);
+                    /* IE 9 */
+
+                    -webkit-transform: scale(2);
+                    /* Safari and Chrome */
+
+                    opacity: 0;
+                }
+            }
+
+
+            /*  @keyframes myfirst{
+                  0%   {width:100px}
+                  25%  {width: 200px}
+                  50%  {width:300px}
+                  75%  {width: 400px}
+                  100% {width: 500px}
+              }
+
+              @-webkit-keyframes myfirst *//* Safari and Chrome *//*
+              {
+                  0%   {width:100px}
+                  25%  {width: 200px}
+                  50%  {width:300px}
+                  75%  {width: 400px}
+                  100% {width: 500px}
+              }
+
+              div {
+                  position:relative;
+                  animation: myfirst 5s;
+                  -webkit-animation: myfirst 5s;
+                  -webkit-animation-timing-function: ease-in;
+              }*/
+        </style>

@@ -1,0 +1,246 @@
+/*####north#####*/
+.bghead{
+    height:85px;
+    background: url("../../images/index/headbg1.png") repeat;
+}
+.bghead1{
+    width: 200px;
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-top: 4px;
+    margin-left: 5px;
+}
+.logo{
+    background: url("../../images/index/logo1.png") no-repeat;
+    /*height: 50px;*/
+    /*width: 50px;*/
+}
+.bghead2{
+    background: url("../../images/index/headbg2.png") no-repeat;
+    /*border: 1px solid red;*/
+    width: 450px;
+    height: 40px;
+    margin-top: -83px;
+    float: right;
+
+    text-align: right;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 40px;
+    /*padding-right: 5px;*/
+}
+
+
+/*#####west######*/
+a,img{
+    border:0;
+    color:#000;
+    text-decoration:none;
+}
+a:hover{
+    color:#104b67;
+    border-bottom: 1px solid #6fb3e0;
+}
+
+.left{
+    width: 100%;
+    height:100%;
+    color:#000000;
+    font-size:14px;
+    text-align:left;
+    position:absolute;
+    left:0;top:0;
+    font:12px/180% "微软雅黑";
+    background-color: #f6f6f6;
+}
+
+.left_top{
+    background-color: #F6F6F6;
+    height: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 10px;
+    padding-left: 60px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #555555;
+}
+.div1{
+    text-align:left;
+    width:99%;
+}
+.div2{
+    height:40px;
+    line-height:40px;
+    cursor:pointer;
+    font-size:14px;
+    position:relative;
+    border-bottom:#ccc 1px dotted;
+    padding-left: 50px;
+    background-color: #F6F6F6;
+    border-bottom: 1px solid #ffffff;
+    color: #555555;
+}
+.div2bag{
+    background-color: #e5e5e5;
+    border-left: 5px solid #0ab5d9;
+    color:#0080d8;
+}
+
+.div3{
+    display:none;
+    font-size:13px;
+    background-color: #ffffff;
+}
+.div3 ul{margin:0;padding:0;}
+.div3 li{
+    height:30px;
+    line-height:30px;
+    list-style:none;
+    border-bottom: #e4deff 1px dotted;
+    text-align:left;
+    padding-left: 60px;
+    cursor: pointer;
+}
+.div3 li:hover{
+    background-color: #e8f7df;
+}
+
+.div3bag{
+    border-right: 2px solid darkmagenta;
+    background-color: #e8f7df;
+}
+
+/*#####center#######*/
+.centertip{
+    height: 25px;
+    border-bottom: 1px solid #F2F2F2;
+    padding-top: 16px;
+    font-size: 14px;
+    background: #F6F6F6;
+}
+.centertip span{
+    color: #0080d8;
+}
+
+/*查询栏*/
+/*###########按钮############*/
+.inputtext{
+    height: 20px;border: 1px solid #e5e5e5;
+}
+.btns{
+    background-color: #6fb3e0;
+    color: #ffffff;
+    border: 1px solid #6fb3e0;
+    cursor: pointer;height: 22px;width: 60px;
+}
+.btns:hover{
+    background-color: #2D93CA;
+}
+.btns:active{
+    position: relative;
+    top: 1px;
+}
+
+
+
+/************表单上方或者下方的悬浮工具条***************/
+div.form-foot-btns{
+    border-top: 1px solid gainsboro;
+}
+div.form-foot-btns ul
+{
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    text-align: center;
+    list-style-type: none;
+}
+div.form-foot-btns ul li
+{
+    margin-left: 5px;
+    display:inline;
+    list-style-type:none;
+}
+div.form-foot-btns ul li a{
+    background-color: #6fb3e0;
+    color: #ffffff;
+    border: 1px solid #6fb3e0;
+    cursor: pointer;height: 22px;width: 60px;
+}
+div.form-foot-btns ul li a:hover{
+    background-color: #2D93CA;
+}
+div.form-foot-btns ul li a:active{
+    position: relative;
+    top: 1px;
+}
+
+/*工具栏背景*/
+.highcharstoolbar{
+    /*background: url("../../img/hengtiao.jpg");*/
+    background-color: #6fb3e0;
+    color: #ffffff;
+    height: 23px;
+    width: auto;
+    padding-top: 5px;
+}
+
+/*流程*/
+ol.flowstep-6 {
+    overflow: hidden;
+    zoom: 1;
+}
+.flowstep-6 {
+    margin-left: 0;
+    margin-right: -45px;
+    width: 875px;
+}
+.flowstep-6 li {
+    float: left;
+    text-align: center;
+    width:135px;
+}
+.flowstep-6 .step-name {
+    padding: 3px 0;
+    font-weight: 700;
+    color: #444;
+}
+.flowstep-6 .step-pass .step-name{
+    color: #999;
+}
+.flowstep-6 .step-name-b{
+    font-weight: bold;
+    color:red;
+}
+.flowstep-6 .step-no {
+    height: 34px;
+    line-height: 34px;
+    font-family: 'arial black';
+    color: #fff;
+    font-size: 18px;
+}
+.flowstep-6 .step-no {
+    background: url(../../images/process/gostatus.png) 50% -102px;
+}
+.flowstep-6 .step-last .step-no {
+    /*background-position: 50% -136px;*/
+}
+.flowstep-6 .step-pass .step-no {
+    color: transparent;
+    _color:tomato; /*For IE6-*/
+    _filter:chroma(color=tomato);/*For IE6-*/
+    background: url(../../images/process/gostatus.png) 50% -170px;
+}
+.flowstep-6 .step-first .step-no {
+    /*background-position: 50% -204px;*/
+}
+.flowstep-6 .step-last-pass .step-no {
+    background: url(../../images/process/gostatus.png) no-repeat 50% -68px;
+}
+ol, ul, li, dl, dd, dt {
+    list-style: none;
+}
+

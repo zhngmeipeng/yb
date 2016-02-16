@@ -1,0 +1,271 @@
+.welcome{
+width:100%;
+height:32px;
+background-color:rgb(232,230,231)
+}
+.welcome span{
+line-height:33px;
+vertical-align:middle;
+}/*����span��ֱ����*/
+.beginwithwelcome{
+font-size:13px;
+margin-left:175px;
+}
+.beginwithserver{
+font-size:13px;
+float:right;
+margin-right:185px
+}
+/*----------------------------------------------------------------��һ��div-------------------------------------------------------------------------------------*/
+.mainbutns{
+   height:100px;
+   width:100%;
+}
+.mainbutns span{
+    font-size:13px;
+    font-weight:400px;
+}
+.yiboyg{
+font-family:'Microsoft YaHei,Tahoma,SimSun,Verdana';
+font-size: 30px;
+
+
+}
+.bottel{
+    width: 250px;
+    height: 100px;
+    float: left;
+    padding-top: 5px;
+}
+.botul{
+    width: 740px;
+    height: 105px;
+    float: left;
+}
+.yibobt{
+    width: 100%;
+    height: 210px;
+    color: #B6B4B7;
+    background: #141D26 repeat-x;
+}
+.bottom{
+    width: 990px;
+    height: 105px;
+    margin: 0px auto;
+    padding: 0px 30px;
+}
+.dibu{
+    color: #fff;
+    FONT-SIZE: 9pt;
+    text-decoration: none;
+}
+.ca-menu .grey-box-icon {
+    text-align: center;
+    position: relative;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+.grey-box-icon {
+    text-align: center;
+    position: relative;
+}
+
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+    FONT-FAMILY: Microsoft YaHei,Tahoma,SimSun,Verdana;
+    font-size: 100%;
+}
+
+.Link01 {
+    color: #333;
+    FONT-SIZE: 10pt;
+}
+#login .loginform .pad, #register .loginform .pad {
+    overflow: hidden;
+    padding: 30px;
+}
+
+.login1 {
+    color: #000;
+    FONT-SIZE: 16pt;
+}
+
+#login .loginform .controls, #register .loginform .controls {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#login .loginform input,
+#register .loginform input {
+  color: #444;
+}
+
+#login .loginform, #register .loginform {
+    position: relative;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: relative;
+    max-width: 400px;
+    padding-top: 0;
+    margin-top:80px;
+}
+
+#login .loginform input {
+    padding: 9px 6px 9px 40px;
+    height: auto;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+strong {
+    font-size:19px;
+}
+
+.Link01 strong{
+    color: #333;
+    font-size: 13px;
+}
+
+
+
+.slide_banner .slide_stage a {
+    display: block;
+    width: 100%;
+    height: 360px;
+    text-decoration: none;
+}
+
+.slide_banner, .slide_banner .slide_stage {
+    width: 100%;
+    height: 360px;
+   overflow: hidden;
+}
+
+.slide_banner .slide_stage .bg {
+    height: 360px;
+    text-align: center;
+}
+
+
+.slide_banner .slide_handdler {
+    width: 100%;
+    height: 12px;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -28px;
+    text-align: center;
+}
+
+.slide_banner .slide_handdler a {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    vertical-align: top;
+    margin-left: 10px;
+    background: #fff;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.slide_banner .slide_handdler a:hover, .slide_banner .slide_handdler .current {
+    background: #e90000;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.slide_banner .slide_handdler a.first {
+    margin-left: 245px;
+}
+
+.aa{
+    border: 0;
+    color: #000;
+    text-decoration: none;
+
+}
+img {
+    border: none;
+    display:block ;
+
+}
+#service1 {
+    margin-top: -202px;
+    position: fixed;
+    _position: absolute;
+    left: 0;
+    top: 50%;
+    width: 138px;
+    height: 320px;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+    z-index: 999;
+    bgcolor: #545454;
+}
+
+#service {
+    margin-top: -305px;
+    position: fixed;
+    _position: absolute;
+    right: 0;
+    top: 50%;
+    width: 101px;
+    height: 588px;
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+    z-index: 999;
+    bgcolor: #545454;
+}
+
+.yiboindex h1 {
+    font-size: 48px;
+    min-height: 80px;
+    color: #313131;
+}
+
+.homePageyiboyg h3{
+    line-height: 60px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.homePageyiboyg1{
+    font-size: 48px;
+    min-height: 80px;
+    color: #313131;
+    font-weight: 400;
+}
+.homePageyiboyg2 h3{
+    line-height: 60px;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.homePageH5{
+    float: left;
+    width: 740px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.dianhua {
+    color: #fff;
+    FONT-SIZE: 24pt;
+}
+
+.dianhua1 {
+    color: #fff;
+    FONT-SIZE: 12pt;
+    text-decoration: none;
+}
