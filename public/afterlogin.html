@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <script type="text/javascript" src="js/easyui/jquery-1.8.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="js/easyui/themes/default/easyui.css" />
-    <script src="js/easyui/jquery.easyui.min.js"></script>
-    <script src="js/easyui/locale/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="js/jquery-easyui-1.4.3/jquery-1.8.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.4.3/themes/metro/easyui.css" />
+    <script src="js/jquery-easyui-1.4.3/jquery.easyui.min.js"></script>
+    <script src="js/jquery-easyui-1.4.3/locale/easyui-lang-zh_CN.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
     <link rel="stylesheet" type="text/css" href="css/homecss.css"/>
     <link rel="stylesheet" type="text/css" href="css/btns.css"/>
@@ -56,10 +56,44 @@
     <div style="width:100%;background:url('img/0060.gif');background-position:center;height:360px;background-repeat: no-repeat;margin-top:7px"></div>
 -->
 
-    <div style="width: 990px;height: 500px;margin: 20px auto;border: 1px solid green">
+    <div style="width: 990px;height: 500px;margin: 20px auto;background-color: rgb(255,255,255)">
 
-        <div style="height: 100%;margin-left: 20px;width: 730px;border: 1px solid darkseagreen;float: right"></div>
-        <div style="border: 1px solid #808080;width: 240px;height: 100%"></div>
+        <div style="height: 100%;margin-left: 20px;width: 730px;float: right">
+                    <div style="margin-bottom: 10px" class="likeTabs">
+                       <ul style="border-bottom: 2px solid #808080;height: 40px">
+                           <li><a>佣金交易</a></li>
+                       </ul>
+                    </div>
+                    <div style="margin-bottom: 10px">时间：<input class="easyui-datebox" style="width: 120px;height:30px"/>-
+                                <input class="easyui-datebox" style="width: 120px;height:30px"/>
+                    </div>
+                    <div style="margin-bottom: 10px">
+                        <span>状态：</span>
+                        <span>全部</span>
+                        <span>已结算</span>
+                        <span>未结算</span>
+                    </div>
+                        <table class="easyui-datagrid"  style="width:100%;height:380px"
+                               data-options="singleSelect:true,url:'datagrid_data1.json',method:'get',pagination:true">
+                            <thead>
+                            <tr>
+                                <th data-options="field:'itemid',width:80">Item ID</th>
+                                <th data-options="field:'productid',width:100">Product</th>
+                                <th data-options="field:'listprice',width:80,align:'right'">List Price</th>
+                                <th data-options="field:'unitcost',width:80,align:'right'">Unit Cost</th>
+                                <th data-options="field:'attr1',width:250">Attribute</th>
+                                <th data-options="field:'status',width:60,align:'center'">Status</th>
+                            </tr>
+                            </thead>
+                        </table>
+
+
+        </div>
+        <div style="border: 1px solid #808080;width: 240px;height: 100%">
+            <ul class="right-manu" lines="true" style="width:240px;height:250px">
+                <li ulvalue="佣金交易">佣金交易</li>
+            </ul>
+        </div>
     </div>
 
     <div id="service1">
@@ -67,7 +101,6 @@
             <tbody><tr>
                 <td>
                     <img src="img/dingyuehao.jpg">
-
                 </td>
             </tr>
             </tbody></table>
@@ -208,8 +241,6 @@
             </tr>
             </tbody></table>
     </div>
-
-
 </div>
 </div>
 </body>
@@ -221,23 +252,52 @@
     $(function(){
         var title=$('.aa');
 
+        var Ul=$('.right-manu');
+
+        var li2=$('.likeTabs').find('ul').find('li');
+        console.log(li2)
+        var lis=$(Ul).find('li');
+
         var showImg=function(i){
-
             title[i].onmouseover=function(){
-
                 $($(this).find('img')).attr('src','img/025_r1_c'+(i+1)+'.gif')
-            }
+            };
             title[i].onmouseout=function(){
                 $(this).find('img').attr('src','img/025-1_r1_c'+(i+1)+'.gif')
             }
-
-
-        }
+        };
 
         for(var i=0;i<title.length;i++){
             if(i==4){}else{
                 showImg(i);
             }
         };
+
+
+        function showBackColor(i){
+            lis[i].onmouseover=function(){
+                $($(this)).css('background-color','green');
+                $(li2[i]).find('a').css('border-bottom','5px solid grey')
+            };
+
+            lis[i].onmouseout=function(){
+                $($(this)).css('background-color','');
+                $(li2[i]).find('a').css('border-bottom','')
+            };
+
+            li2[i].onmouseover=function(){
+                $(lis[i]).css('background-color','green');
+                $(li2[i]).find('a').css('border-bottom','5px solid grey')
+            }
+            li2[i].onmouseout=function(){
+                $(li2[i]).find('a').css('border-bottom','')
+                $(lis[i]).css('background-color','');
+            };
+
+        }
+
+        for(var i=0;i<lis.length;i++){
+            showBackColor(i)
+        }
     })
 </script>

@@ -279,3 +279,26 @@ img {
     font-size: 13px;
     font-weight: 400;
 }
+
+
+.right-manu li{
+    border-bottom: 1px solid gainsboro;
+    line-height: 40px;
+    text-indent: 20px;
+    font-size: 15px;
+}
+
+.ulStation li{
+
+
+}
+
+
+.likeTabs ul li{
+    list-style: none;
+    float: left;
+    line-height: 40px;
+    margin-right: 35px;
+    font-size: 20px;
+}
+
